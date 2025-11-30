@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier N°11 | Beyond Perfection</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter Font --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f5; /* Light, parchment-like background for an earthy touch */
+            color: #1a1a1a;
+        }
+        .wordmark {
+            font-family: serif; /* Using a serif font for the wordmark elegance */
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar --><header class="sticky top-0 z-10 bg-[#f7f7f5]/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Wordmark (Mimicking the B&W elegant design) --><div class="text-2xl font-bold tracking-widest uppercase wordmark">
+                Atelier N°11
+            </div>
+            
+            <!-- Desktop Navigation Links --><nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+                <a href="#products" class="hover:text-gray-600 transition duration-150">Shop</a>
+                <a href="#story" class="hover:text-gray-600 transition duration-150">Our Story</a>
+                <a href="#contact" class="hover:text-gray-600 transition duration-150">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Placeholder) --><button class="md:hidden p-2">
+                <svg xmlns="http://www.w3.orgs/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section --><section class="relative h-[80vh] flex items-center justify-center text-center bg-gray-900 overflow-hidden">
+        <!-- Background Image/Overlay --><!-- UPDATED: Using a reliable placeholder that describes the three luxury amber jars --><img src="https://placehold.co/1920x1080/28282b/b8b8b8?text=ATELIER+N11+COLLECTION%0A(Three+Luxury+Amber+Jars)" 
+             alt="The complete Atelier N°11 Body Butter Collection" 
+             class="absolute inset-0 w-full h-full object-cover opacity-80 transition duration-500 ease-in-out hover:opacity-90"
+             onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/28282b/b8b8b8?text=ATELIER+N11+COLLECTION';">
+        
+        <div class="relative z-10 p-6 max-w-4xl mx-auto text-white">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tighter mb-4 wordmark drop-shadow-lg">
+                ATELIER N°11
+            </h1>
+            <p class="text-xl sm:text-2xl font-light mb-8 italic drop-shadow-md">
+                The Workshop of the Extraordinary.
+            </p>
+            <a href="#products" class="inline-block px-8 py-3 text-lg font-medium text-gray-900 bg-white border border-transparent rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+                Explore The Collection
+            </a>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section --><section id="products" class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-light text-center mb-12 tracking-wider uppercase">
+                The Core Collection
+            </h2>
+
+            <!-- Products Grid --><div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- Product 1: Musc Street 01 --><div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder updated to a sophisticated Grey for Musc Street 01 --><img src="https://placehold.co/400x500/6b7280/f8fafc?text=MUSC+01" 
+                         alt="Product Musc Street 01 body butter" 
+                         class="w-full h-auto object-cover border-b border-gray-100"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x500/6b7280/f8fafc?text=MUSC+01';">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold wordmark mb-2">Musc Street 01</h3>
+                        <p class="text-sm text-gray-600 mb-4">The Urban, Minimalist Scent Anchor</p>
+                        <p class="text-base text-gray-800 mb-6">Powered by the perfect anchoring blend of **Shea Butter, Jojoba Oil, and Sweet Almond Oil**. This butter creates a long-lasting canvas, enhancing your clean, minimalist notes.</p>
+                        <a href="#" class="inline-block px-6 py-2 text-sm uppercase tracking-widest text-white bg-gray-900 rounded-full hover:bg-gray-700 transition duration-300">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Citrus Riviera --><div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder remains Orange for Citrus Riviera --><img src="https://placehold.co/400x500/fb923c/f8fafc?text=CITRUS" 
+                         alt="Product Citrus Riviera body butter" 
+                         class="w-full h-auto object-cover border-b border-gray-100"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x500/fb923c/f8fafc?text=CITRUS';">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold wordmark mb-2">Citrus Riviera</h3>
+                        <p class="text-sm text-gray-600 mb-4">The Bright, Mediterranean Primer</p>
+                        <p class="text-base text-gray-800 mb-6">The essential fragrance primer. This nourishing base of **Shea Butter, Jojoba Oil, and Sweet Almond Oil** locks in moisture, ensuring your bright, exhilarating citrus scent layers beautifully and lasts all day.</p>
+                        <a href="#" class="inline-block px-6 py-2 text-sm uppercase tracking-widest text-white bg-gray-900 rounded-full hover:bg-gray-700 transition duration-300">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Saffron Dusk --><div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <!-- Placeholder remains Red for Saffron Dusk --><img src="https://placehold.co/400x500/dc2626/fef3c7?text=SAFFRON" 
+                         alt="Product Saffron Dusk body butter" 
+                         class="w-full h-auto object-cover border-b border-gray-100"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x500/dc2626/fef3c7?text=SAFFRON';">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold wordmark mb-2">Saffron Dusk</h3>
+                        <p class="text-sm text-gray-600 mb-4">The Rich, Oriental Scent Foundation</p>
+                        <p class="text-base text-gray-800 mb-6">Essential for the luxury fragrance ritual. Rich in **Shea Butter, Jojoba Oil, and Sweet Almond Oil**, this formula primes the skin, deepening and extending the wear of your oriental, dusk-inspired perfumes.</p>
+                        <a href="#" class="inline-block px-6 py-2 text-sm uppercase tracking-widest text-white bg-gray-900 rounded-full hover:bg-gray-700 transition duration-300">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Excerpt Section --><section id="story" class="bg-gray-100 py-16 sm:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-light mb-6 tracking-wide uppercase">
+                The Philosophy of N°11
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-800 italic mb-8">
+                "We created N°11 to fill a critical gap: providing the perfect, nourishing canvas to anchor and extend the life of your finest fragrances, thanks to the precision blend of **Shea Butter, Jojoba Oil, and Sweet Almond Oil**."
+            </p>
+            <p class="text-base text-gray-600">
+                Our commitment, rooted in Swiss precision, is to elevate the fragrance ritual. Our body butters are formulated not just for deep hydration, but to create the ideal, long-lasting base layer for your signature scent, embodying the spirit of going one better than the standard 10/10.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer --><footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="text-xl font-bold tracking-widest uppercase wordmark mb-6">
+                Atelier N°11
+            </div>
+
+            <div class="flex justify-center space-x-6 mb-6 text-sm">
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400">Shipping & Returns</a>
+                <a href="mailto:contact@atelierno11.com" class="hover:text-gray-400">Contact Us</a>
+            </div>
+
+            <div class="text-gray-500 text-sm">
+                &copy; 2025 Atelier N°11. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

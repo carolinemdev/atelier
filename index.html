@@ -4,45 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atelier N°11 | Beyond Perfection</title>
-    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
-    <!-- Use Inter Font --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f7f5; /* Light, parchment-like background for an earthy touch */
+            background-color: #f7f7f5; /* Light, parchment-like background */
             color: #1a1a1a;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
         }
         .wordmark {
-            font-family: serif; /* Using a serif font for the wordmark elegance */
+            font-family: serif; 
             font-weight: 500;
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Navigation Bar --><header class="sticky top-0 z-10 bg-[#f7f7f5]/95 backdrop-blur-sm shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <!-- Logo/Wordmark (Mimicking the B&W elegant design) --><div class="text-2xl font-bold tracking-widest uppercase wordmark">
+    <header class="sticky top-0 z-50 bg-[#f7f7f5]/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative z-50">
+            <div class="text-2xl font-bold tracking-widest uppercase wordmark">
                 Atelier N°11
             </div>
             
-            <!-- Desktop Navigation Links --><nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
                 <a href="#products" class="hover:text-gray-600 transition duration-150">Products</a>
                 <a href="#story" class="hover:text-gray-600 transition duration-150">Our Story</a>
                 <a href="#contact" class="hover:text-gray-600 transition duration-150">Contact</a>
             </nav>
 
-            <!-- Mobile Menu Button (Placeholder) --><button class="md:hidden p-2">
-                <svg xmlns="http://www.w3.orgs/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
         </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#f7f7f5] shadow-lg border-t border-gray-200 md:hidden z-40">
+            <nav class="flex flex-col p-6 space-y-6 text-center uppercase tracking-wider text-sm">
+                <a href="#products" class="mobile-link block py-2 hover:text-gray-600 transition duration-150">Products</a>
+                <a href="#story" class="mobile-link block py-2 hover:text-gray-600 transition duration-150">Our Story</a>
+                <a href="#contact" class="mobile-link block py-2 hover:text-gray-600 transition duration-150">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section --><section class="relative h-[80vh] flex items-center justify-center text-center bg-gray-900 overflow-hidden">
-            <!-- Background Image/Overlay --><!-- UPDATED: Using a reliable placeholder that describes the three luxury amber jars --><img src="images/products.png" 
-            alt="The complete Atelier N°11 Body Butter Collection" 
+    <section class="relative h-[80vh] flex items-center justify-center text-center bg-gray-900 overflow-hidden">
+        <img src="images/products.png" 
+             alt="The complete Atelier N°11 Body Butter Collection" 
              class="absolute inset-0 w-full h-full object-cover opacity-80 transition duration-500 ease-in-out hover:opacity-90"
              onerror="this.onerror=null;this.src='images/products.png';">
         
@@ -59,61 +68,59 @@
         </div>
     </section>
 
-    <!-- Product Showcase Section --><section id="products" class="py-16 sm:py-24">
+    <section id="products" class="py-16 sm:py-24 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-light text-center mb-12 tracking-wider uppercase">
                 The Core Collection
             </h2>
 
-            <!-- Products Grid --><div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-                <!-- Product 1: Musc Street 01 --><div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
-                    <!-- Placeholder updated to a sophisticated Grey for Musc Street 01 --><img src="images/musc-street-01.png" 
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="images/musc-street-01.png" 
                          alt="Product Musc Street 01 body butter" 
                          class="w-full h-auto object-cover border-b border-gray-100"
                          onerror="this.onerror=null;this.src='images/musc-street-01.png';">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold wordmark mb-2">Musc Street 01</h3>
                         <p class="text-sm text-gray-600 mb-4">The Urban, Minimalist Scent Anchor</p>
-                        <p class="text-base text-gray-800 mb-6">Powered by the perfect anchoring blend of **Shea Butter, Jojoba Oil, and Sweet Almond Oil**. This butter creates a long-lasting canvas, enhancing your clean, minimalist notes.</p>
+                        <p class="text-base text-gray-800 mb-6">Powered by the perfect anchoring blend of shea butter, oil blends & a combination of musc scents. This whipped body butter creates a long lasting canvas, enhancing your clean, minimalist notes.</p>
                     </div>
                 </div>
 
-                <!-- Product 2: Citrus Bloom --><div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
-                    <!-- Placeholder remains Orange for Citrus Bloom --><img src="images/citrus-bloom.png" 
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="images/citrus-bloom.png" 
                          alt="Product Citrus Bloom body butter" 
                          class="w-full h-auto object-cover border-b border-gray-100"
                          onerror="this.onerror=null;this.src='images/citrus-bloom.png';">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold wordmark mb-2">Citrus Bloom</h3>
                         <p class="text-sm text-gray-600 mb-4">The Bright, Mediterranean Primer</p>
-                        <p class="text-base text-gray-800 mb-6">The essential fragrance primer. This nourishing base of **Shea Butter, Jojoba Oil, and Sweet Almond Oil** locks in moisture, ensuring your bright, exhilarating citrus scent layers beautifully and lasts all day.</p>
+                        <p class="text-base text-gray-800 mb-6">The essential fragrance primer. This nourishing base of shea butter, blend of oils & citrus scent & accords locks in moisture, ensuring your bright, exhilarating citrus scent layers beautifully and lasts all day.</p>
                     </div>
                 </div>
 
-                <!-- Product 3: Sunset Dreams --><div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
-                    <!-- Placeholder remains Red for Sunset Dreams --><img src="images/saffron-dusk.png" 
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                    <img src="images/saffron-dusk.png" 
                          alt="Product Sunset dreams body butter" 
                          class="w-full h-auto object-cover border-b border-gray-100"
                          onerror="this.onerror=null;this.src='images/saffron-dusk.png';">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold wordmark mb-2">Sunset Dreams</h3>
                         <p class="text-sm text-gray-600 mb-4">The Rich, Oriental Scent Foundation</p>
-                        <p class="text-base text-gray-800 mb-6">Essential for the luxury fragrance ritual. Rich in **Shea Butter, Jojoba Oil, and Sweet Almond Oil**, this formula primes the skin, deepening and extending the wear of your oriental, dusk-inspired perfumes.</p>
+                        <p class="text-base text-gray-800 mb-6">Essential for the luxury fragrance ritual. Rich in shea butter, oil blends & deep oriental scents, this formula primes the skin, deepening and extending the wear of your oriental, dusk inspired perfumes.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Brand Story Excerpt Section --><section id="story" class="bg-gray-100 py-16 sm:py-24">
+    <section id="story" class="bg-gray-100 py-16 sm:py-24 scroll-mt-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-light mb-6 tracking-wide uppercase">
-                The Philosophy of N°11
+                The Philosophy of Atelier N°11
             </h2>
             <p class="text-xl leading-relaxed text-gray-800 italic mb-8">
-                "We created N°11 to fill a critical gap: providing the perfect, nourishing canvas to anchor and extend the life of your finest fragrances, thanks to the precision blend of **Shea Butter, Jojoba Oil, and Sweet Almond Oil**."
+                "We created the body butters to fill a critical gap: providing the perfect, nourishing canvas to anchor and extend the life of your finest fragrances, thanks to the precision blend of **Shea Butter, Jojoba Oil, and Sweet Almond Oil**."
             </p>
             <p class="text-base text-gray-600">
                 Our commitment, rooted in Swiss precision, is to elevate the fragrance ritual. Our body butters are formulated not just for deep hydration, but to create the ideal, long-lasting base layer for your signature scent, embodying the spirit of going one better than the standard 10/10.
@@ -121,7 +128,7 @@
         </div>
     </section>
 
-    <!-- Footer --><footer id="contact" class="bg-gray-900 text-white py-12">
+    <footer id="contact" class="bg-gray-900 text-white py-12 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
             <div class="text-xl font-bold tracking-widest uppercase wordmark mb-6">
@@ -129,7 +136,7 @@
             </div>
 
             <div class="flex justify-center space-x-6 mb-6 text-sm">
-                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="privacy_policy.html" class="hover:text-gray-400">Privacy Policy</a>
                 <a href="https://instagram.com/ateliernumber11" class="hover:text-gray-400">Instagram</a>
                 <a href="mailto:contact@atelierno11.com" class="hover:text-gray-400">Contact Us</a>
             </div>
@@ -139,6 +146,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Select the button and the menu div
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        // Toggle menu visibility when button is clicked
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
 
 </body>
 </html>
